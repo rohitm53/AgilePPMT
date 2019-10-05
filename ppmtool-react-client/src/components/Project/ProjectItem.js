@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class ProjectItem extends Component {
     render() {
-        const {project} = this.props;
+        const { project } = this.props;
         return (
             <div>
                 <div className="container">
@@ -18,21 +18,21 @@ class ProjectItem extends Component {
                             </div>
                             <div className="col-md-4 d-none d-lg-block">
                                 <ul className="list-group">
-                                    <a href="#">
-                                        <li className="list-group-item board">
+                                    <Link to="#">
+                                        <li className="list-group-item board mb-2">
                                             <i className="fas fa-flag-checkered pr-1"> Project Board</i>
                                         </li>
-                                    </a>
+                                    </Link>
                                     <Link to={`/updateProject/${project.projectIdentifier}`}>
-                                        <li className="list-group-item update">
+                                        <li className="list-group-item update mb-2">
                                             <i className="fa fa-edit pr-1"> Update Project In</i>
                                         </li>
                                     </Link>
-                                    <a href="#">
-                                        <li className="list-group-item delete">
+                                    <Link to="#">
+                                        <li className="list-group-item delete mb-2">
                                             <i className="fa fa-minus-circle pr-1"> Delete Project</i>
                                         </li>
-                                    </a>
+                                    </Link>
                                 </ul>
                             </div>
                         </div>
