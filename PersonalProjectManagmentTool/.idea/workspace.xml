@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba82be5-f41f-44f7-939d-cd4268939e55" name="Default Changelist" comment="Development Branch made">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Backlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/ProjectTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/repositories/BacklogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/repositories/ProjectTaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/services/ProjectService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
