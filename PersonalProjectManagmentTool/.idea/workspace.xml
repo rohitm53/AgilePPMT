@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba82be5-f41f-44f7-939d-cd4268939e55" name="Default Changelist" comment="Development Branch made">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/projectnotfoundexception/ProjectNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/projectnotfoundexception/ProjectNotFoundExceptionResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/services/ProjectTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/web/BacklogController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Backlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Backlog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/ProjectTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/CustomResponseEntityExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/CustomResponseEntityExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/ProjectIdException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/projectidexception/ProjectIdException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/ProjectIdExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/projectidexception/ProjectIdExceptionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/repositories/ProjectTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/repositories/ProjectTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/services/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/services/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,17 +164,6 @@
     <MESSAGE value="Excepetion handling classes added" />
     <MESSAGE value="Development Branch made" />
     <option name="LAST_COMMIT_MESSAGE" value="Development Branch made" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/exceptions/CustomResponseEntityExceptionHandler.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
