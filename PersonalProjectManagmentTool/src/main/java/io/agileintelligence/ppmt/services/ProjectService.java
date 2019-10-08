@@ -2,7 +2,7 @@ package io.agileintelligence.ppmt.services;
 
 import io.agileintelligence.ppmt.domain.Backlog;
 import io.agileintelligence.ppmt.domain.Project;
-import io.agileintelligence.ppmt.exceptions.ProjectIdException;
+import io.agileintelligence.ppmt.exceptions.projectidexception.ProjectIdException;
 import io.agileintelligence.ppmt.repositories.BacklogRepository;
 import io.agileintelligence.ppmt.repositories.ProjectRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package io.agileintelligence.ppmt.exceptions;
+package io.agileintelligence.ppmt.exceptions.projectidexception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
