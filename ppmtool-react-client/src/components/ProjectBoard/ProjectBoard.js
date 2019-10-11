@@ -43,7 +43,7 @@ class ProjectBoard extends Component {
                     </div>);
                 }
             }else{
-                return (<Backlog project_tasks_prop={project_tasks} projectIdentifier={id}/>);
+                return (<Backlog project_tasks_prop={project_tasks}/>);
             }
         }
 
@@ -64,7 +64,7 @@ class ProjectBoard extends Component {
 ProjectBoard.propTypes={
     backlog:PropTypes.object.isRequired,
     getBacklog:PropTypes.func.isRequired,
-    errors:PropTypes.func.isRequired
+    errors:PropTypes.object.isRequired
 };
 
 const mapStateToProp = state =>({

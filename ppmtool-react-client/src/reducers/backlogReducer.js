@@ -26,8 +26,8 @@ export default function (state = initialState, action) {
             }
         case DELETE_PROJECT_TASK:
             return {
-                ...state
-                // TO DO NEED TO FILTER PROJECT TASK EXCLUDING DELETED ONE
+                ...state,
+                project_tasks:state.project_tasks.filter(projectTask =>projectTask.projectSequence!==action.payload)
             }
     }
 }

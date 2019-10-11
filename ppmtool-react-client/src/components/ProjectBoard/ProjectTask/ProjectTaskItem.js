@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import {deleteProjectTask} from '../../../actions/backlogAction';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 
 export class ProjectTaskItem extends Component {
+    
+    onDelete=(backlog_id,pt_seq)=>{
+        this.props.deleteProjectTask(backlog_id,pt_seq);
+    }
+
     render() {
-        const {projectTask,projectIdentifier}  = this.props;
+        const {projectTask}  = this.props;
 
         let priorityString;
         let priorityClass;
@@ -20,7 +28,6 @@ export class ProjectTaskItem extends Component {
         }
 
         return (
-            <div>
                 <div className="card mb-2 bg-light">
                     <div className={`card-header text-primary ${priorityClass}`}>
                         ID: {projectTask.projectSequence} -- Priority: {priorityString}
@@ -28,13 +35,17 @@ export class ProjectTaskItem extends Component {
                     <div className="card-body bg-light">
                         <h5 className="card-title">{projectTask.summary}</h5>
                         <p className="card-text text-truncate">{projectTask.acceptanceCriteria}</p>
-                        <Link to={`/updateProjectTask/${projectIdentifier}/${projectTask.projectSequence}`} className="btn btn-primary">View / Update</Link>
-                        <button className="btn btn-danger ml-4">Delete</button>
+                        <Link to={`/updateProjectTask/${projectTask.projectIdentifier}/${projectTask.projectSequence}`} className="btn btn-primary">View / Update</Link>
+                        <button className="btn btn-danger ml-4" 
+                            onClick={this.onDelete.bind(this,projectTask.projectIdentifier,projectTask.projectSequence)}>Delete</button>
                     </div>
                 </div>
-            </div>
         );
     }
 }
 
-export default ProjectTaskItem;
+ProjectTaskItem.propTypes = {
+    deleteProjectTask:PropTypes.func.isRequired
+}
+
+export default connect(null,{deleteProjectTask})(ProjectTaskItem);

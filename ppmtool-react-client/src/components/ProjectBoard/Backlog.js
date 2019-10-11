@@ -3,10 +3,10 @@ import ProjectTaskItem from './ProjectTask/ProjectTaskItem';
 
 class Backlog extends Component {
     render() {
-        const {project_tasks_prop,projectIdentifier} = this.props;
+        const {project_tasks_prop} = this.props;
 
         const tasks = project_tasks_prop.map(project_task => (
-            <ProjectTaskItem key={project_task.id} projectTask = {project_task} projectIdentifier={projectIdentifier}/>
+            <ProjectTaskItem key={project_task.id} projectTask = {project_task}/>
         ));
 
         let todoItems=[];
