@@ -3,6 +3,7 @@ package io.agileintelligence.ppmt.web;
 import io.agileintelligence.ppmt.domain.User;
 import io.agileintelligence.ppmt.services.MapValidationErrorService;
 import io.agileintelligence.ppmt.services.UserService;
+import io.agileintelligence.ppmt.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,9 +25,15 @@ public class UserController {
     @Autowired
     private MapValidationErrorService mapValidationErrorService;
 
+    @Autowired
+    private UserValidator userValidator;
+
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@Valid @RequestBody User user, BindingResult result){
         //validate the password
+        if(user!=null){
+            userValidator.validate(user,result);
+        }
 
         ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationService(result);
         if(errorMap!=null){

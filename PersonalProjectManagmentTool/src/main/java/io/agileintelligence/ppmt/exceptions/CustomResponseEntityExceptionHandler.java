@@ -4,6 +4,8 @@ import io.agileintelligence.ppmt.exceptions.projectidexception.ProjectIdExceptio
 import io.agileintelligence.ppmt.exceptions.projectidexception.ProjectIdExceptionResponse;
 import io.agileintelligence.ppmt.exceptions.projectnotfoundexception.ProjectNotFoundException;
 import io.agileintelligence.ppmt.exceptions.projectnotfoundexception.ProjectNotFoundExceptionResponse;
+import io.agileintelligence.ppmt.exceptions.userexception.UserNameException;
+import io.agileintelligence.ppmt.exceptions.userexception.UserNameExceptionResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -28,4 +30,10 @@ public class CustomResponseEntityExceptionHandler extends ResponseEntityExceptio
         return new ResponseEntity(exceptionResponse, HttpStatus.BAD_REQUEST);
     }
 
+
+    @ExceptionHandler
+    public final ResponseEntity<Object> handleUserNameException(UserNameException ex,WebRequest request){
+        UserNameExceptionResponse response = new UserNameExceptionResponse(ex.getMessage());
+        return new ResponseEntity(response,HttpStatus.BAD_REQUEST);
+    }
 }
