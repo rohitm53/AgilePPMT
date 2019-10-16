@@ -2,9 +2,11 @@ package io.agileintelligence.ppmt.services;
 
 import io.agileintelligence.ppmt.domain.Backlog;
 import io.agileintelligence.ppmt.domain.Project;
+import io.agileintelligence.ppmt.domain.User;
 import io.agileintelligence.ppmt.exceptions.projectidexception.ProjectIdException;
 import io.agileintelligence.ppmt.repositories.BacklogRepository;
 import io.agileintelligence.ppmt.repositories.ProjectRepository;
+import io.agileintelligence.ppmt.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +18,15 @@ public class ProjectService {
     @Autowired
     private BacklogRepository backlogRepository;
 
-    public Project saveOrUpdate(Project project){
+    @Autowired
+    private UserRepository userRepository;
+
+    public Project saveOrUpdate(Project project,String userName){
 
         try {
+            User user = userRepository.findByUserName(userName);
+            project.setUser(user);
+            project.setProjectLeader(user.getUserName());
             project.setProjectIdentifier(project.getProjectIdentifier().toUpperCase());
             if(project.getId()==null){
                 Backlog backlog = new Backlog();
