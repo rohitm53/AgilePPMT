@@ -32,25 +32,30 @@ public class ProjectController {
         if(errorMap!=null){
             return errorMap;
         }
+
         String userName = ((User)(((UsernamePasswordAuthenticationToken) principal).getPrincipal())).getUserName();
         Project project1=projectService.saveOrUpdate(project,userName);
         return new ResponseEntity<Project>(project1, HttpStatus.CREATED);
     }
 
     @GetMapping("/{projectId}")
-    public ResponseEntity<?> getProjectById(@PathVariable String projectId){
-        Project project = projectService.findByProjectIdentifier(projectId);
+    public ResponseEntity<?> getProjectById(@PathVariable String projectId , Principal principal){
+        String userName = ((User)(((UsernamePasswordAuthenticationToken) principal).getPrincipal())).getUserName();
+        Project project = projectService.findByProjectIdentifier(projectId,userName);
         return new ResponseEntity<Project>(project,HttpStatus.OK);
     }
 
     @GetMapping("/all")
-    public Iterable<Project> getAllProjects(){
-        return projectService.findAllProjects();
+    public Iterable<Project> getAllProjects(Principal principal)
+    {
+        String userName = ((User)(((UsernamePasswordAuthenticationToken) principal).getPrincipal())).getUserName();
+        return projectService.findAllProjects(userName);
     }
 
     @DeleteMapping("/{projectId}")
-    public ResponseEntity<?> deleteProject(@PathVariable String projectId){
-        projectService.deleteProjectByIdentifier(projectId);
+    public ResponseEntity<?> deleteProject(@PathVariable String projectId,Principal principal){
+        String userName = ((User)(((UsernamePasswordAuthenticationToken) principal).getPrincipal())).getUserName();
+        projectService.deleteProjectByIdentifier(projectId,userName);
         return new ResponseEntity<String>("Project with ID : "+projectId+" was deleted",HttpStatus.OK);
     }
 }
