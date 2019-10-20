@@ -3,4 +3,5 @@ PersonalProjectManagmentTool/.idea/
 PersonalProjectManagmentTool/.idea/misc.xml
 PersonalProjectManagmentTool/target/
 ppmtool-react-client/.vscode
+ppmtool-react-client/node_modules
 

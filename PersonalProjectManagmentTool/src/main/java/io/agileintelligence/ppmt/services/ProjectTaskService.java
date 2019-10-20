@@ -67,7 +67,7 @@ public class ProjectTaskService {
         return projectTaskRepository.findByProjectIdentifierOrderByPriority(backlog_id);
     }
 
-    public ProjectTask fingProjectTaskByProjectSequence(String  backlog_id,String pt_id,String userName){
+    public ProjectTask fingProjectTaskByProjectSequence(String backlog_id,String pt_id,String userName){
 
         // Make sure project with user existed
         projectService.findByProjectIdentifier(backlog_id,userName);
