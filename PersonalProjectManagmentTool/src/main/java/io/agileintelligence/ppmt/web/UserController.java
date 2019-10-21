@@ -25,7 +25,7 @@ import javax.validation.Valid;
 import static io.agileintelligence.ppmt.security.SecurityConstants.TOKEN_PREFIX;
 
 @RestController
-@RequestMapping("api/users")
+@RequestMapping("/api/users")
 public class UserController {
 
     @Autowired
