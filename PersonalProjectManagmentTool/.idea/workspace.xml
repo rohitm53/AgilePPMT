@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba82be5-f41f-44f7-939d-cd4268939e55" name="Default Changelist" comment="Development Branch made">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/ProjectTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/domain/ProjectTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/security/SecurityConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/agileintelligence/ppmt/security/SecurityConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/securityActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/actions/securityActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Layout/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ppmtool-react-client/src/components/Layout/Header.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

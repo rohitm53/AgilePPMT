@@ -22,7 +22,9 @@ public class ProjectTask {
     private Integer priority;
     @JsonFormat(pattern = "yyyy-mm-dd")
     private Date dueDate;
+    @JsonFormat(pattern = "yyyy-mm-dd")
     private Date created_At;
+    @JsonFormat(pattern = "yyyy-mm-dd")
     private Date updated_At;
 
     //ManytoOne with Backlog
