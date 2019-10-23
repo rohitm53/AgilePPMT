@@ -16,3 +16,14 @@ export const creatNewUser = (newUser,history) => async dispatch =>{
         });
     }
 };
+
+export const login = (loginRequest) => async dispatch => {
+    try{
+        //Post => login Request
+        const res = await axios.post("/api/users/login",loginRequest);
+        //extract Token res.data
+        const {token} = res.data;
+    }catch(err){
+
+    }
+}
